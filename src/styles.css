@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", "Iowan Old Style", Palatino, serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-ink: #10120e;
+  --color-panel: #1c2118;
+  --color-paper: #f3efe4;
+  --color-dim: #c8c2b2;
+  --color-mute: #8f8978;
+  --color-line: #34392d;
+  --color-canary: #e4b53a;
+  --color-canary-ink: #1c1606;
+
+  --radius-lg: 0.75rem;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    background: var(--color-ink);
+    color: var(--color-paper);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100vh;
+    background: var(--color-ink);
+    color: var(--color-paper);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--color-canary);
+    color: var(--color-canary-ink);
+  }
+
+  input:not([type="range"]):not([type="checkbox"]),
+  textarea,
+  select {
+    width: 100%;
+    min-height: 2.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-line);
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 0.5rem 0.75rem;
+    font: inherit;
+  }
+
+  textarea {
+    min-height: 7rem;
+    resize: vertical;
+  }
+
+  input[type="checkbox"] {
+    accent-color: var(--color-canary);
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+
+  input[type="range"] {
+    accent-color: var(--color-canary);
+    width: 100%;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-mute);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-canary);
+    outline-offset: 2px;
+  }
+
+  .canary-log {
+    max-height: 32rem;
+  }
+
+  .canary-source {
+    min-height: 20rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+

@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Canary",
+      "hasCanvas": false,
+      "bodyTextLen": 965,
+      "bodyTextHash": "d14754d91eb6839ef60fba5441736b1c07668f83dadf565a47ccb5d9d16d58f9",
+      "bodyTextPrefix": "Skip to content Canary Play beta swarm Deck Flock Run Report For",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Canary",
+      "hasCanvas": false,
+      "bodyTextLen": 892,
+      "bodyTextHash": "c4a76746033e2fa826331bd14380af0ee3380a529bd0cf751664d1281c61c3f5",
+      "bodyTextPrefix": "Skip to content Grok Run swarm Deck Twenty-five seats. Each bot ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
